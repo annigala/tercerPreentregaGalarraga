@@ -1,0 +1,27 @@
+footer {
+    background-color: $color-negro;
+    height: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    font-family: 'Gruppo', sans-serif;
+  }
+  
+  .footerFlex {
+    display: flex;
+    justify-content: space-between;
+  
+    img {
+      height: 90px;
+      display: grid;
+      place-content: center;
+    }
+  
+    p {
+      display: grid;
+      place-content: center;
+      font-size: 1.3em;
+      color: $color-casi-blanco;
+    }
+  }
+  

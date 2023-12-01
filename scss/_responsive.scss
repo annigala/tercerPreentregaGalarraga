@@ -1,0 +1,760 @@
+/* media queries */
+@media (min-width:576px) and (max-width:768px) {
+
+    /* barra navegacion */
+    header {
+        background-color: #000000ff;
+        margin-bottom: 0px;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+
+    .logoNav {
+        width: 250px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        z-index: 3;
+        background-color: #000000ff;
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        margin-top: -50px;
+    }
+
+    .navbar-toggler {
+        margin-right: 50px;
+    }
+
+    .barraNavegacion {
+        font-size: 0.7em;
+        display: grid;
+        place-content: end;
+        margin-top: -20px;
+        text-align: end;
+    }
+
+    .botonitoReservarIndex a {
+        margin-top: -15px;
+        text-align: center;
+    }
+
+    /* banner 1 */
+
+    .cajaContenedoraBanner {
+        height: 500px;
+        background-size: cover;
+    }
+
+    .cajaImagenBanner {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .imagenBanner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .tituloSubtituloBanner {
+        position: relative;
+        z-index: 2;
+        top: -80%;
+        left: 25%;
+        text-align: center;
+        color: #FCFCFC;
+        font-family: 'Gruppo', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .textoBanner h2 {
+        margin-bottom: 80px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .subtituloBanner {
+        font-size: 0.8em;
+    }
+
+    .bannerEmpresaSection {
+        color: $color-verde;
+        font-family: 'Gruppo', sans-serif;
+        text-align: center;
+        height: 300px;
+        font-weight: bold;
+    }
+
+    .bannerEmpresa h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 3em;
+    }
+
+    .bannerEmpresa p {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+
+
+    .botonitoEmpresaIndex {
+        margin-top: 15px;
+        background-color: #1C795Dff;
+        border-color: #1C795Dff;
+        border-radius: 5px;
+        width: 220px;
+        height: 50px;
+    }
+
+    .botonitoEmpresaIndex a {
+        @include anclas;
+        font-family: 'Gruppo', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .divSpanSeccionTres {
+        background-color: $color-verde;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: 30px;
+        color: #FCFCFC;
+    }
+
+    .spanIndex {
+        padding: 20px;
+        display: inline-block;
+        font-size: 1.5em;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+    .separador {
+        color: rgb(158, 158, 158);
+        font-weight: bold;
+    }
+
+    .spanSeccionTresContenido p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        font-family: 'Gruppo', sans-serif;
+        font-size: 1.2em;
+    }
+
+    /* grid */
+    .servicioGrid {
+        display: grid;
+        place-content: center;
+    }
+
+    .serviciosMain {
+        text-align: center;
+        height: 1200px;
+        font-family: 'Gruppo', sans-serif;
+        color: $color-casi-blanco;
+    }
+
+    .serviciosMain div h3 {
+        font-size: 2em;
+        color: $color-verde;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .serviciosMainGrid {
+        display: grid;
+        place-items: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'bloqueUno'
+            'bloqueDos';
+    }
+
+    .contenedorServicios {
+        display: grid;
+        place-items: center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .contenedorServicios img {
+        grid-area: "bloqueDos";
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorServicios ul {
+        grid-area: "bloqueUno";
+        font-size: 1.2em;
+        height: 600px;
+        list-style-type: lower-roman;
+    }
+
+    .contenedorServicios ul li {
+        background-color: rgba(28, 121, 93, 0.781);
+        width: 386px;
+        height: 200px;
+        margin: 4px;
+    }
+
+    .esconder {
+        display: none;
+    }
+
+    /* pie de pagina */
+
+    footer {
+        display: flex;
+        background-color: #000000ff;
+        justify-content: space-between;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+    .footerFlex {
+        display: flex;
+    }
+
+    .footerFlex img {
+        margin-right: 70px;
+    }
+
+    .footerFlex p {
+        color: #FCFCFC;
+        margin-left: 70px;
+    }
+
+    /* SERVICIOS */
+
+    .cols {
+        margin-top: 65px;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .col {
+        justify-content: space-evenly;
+        width: 350px;
+        height: 50px;
+        text-align: center;
+        margin: 5px;
+        display: block;
+    }
+
+    .botonServicios {
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-color: $color-verde;
+        background-color: $color-verde;
+        font-weight: bold;
+        font-size: 0.8em;
+        color: #FCFCFC;
+    }
+
+    .mainServicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'bloques'
+            'carrusel';
+        font-family: 'Gruppo', sans-serif;
+        height: 800px;
+    }
+
+    .container {
+        grid-area: "bloques";
+    }
+
+    #carouselExampleIndicators {
+        grid-area: "carrusel";
+        height: 300px;
+        width: 100%;
+        margin-top: -230px;
+    }
+
+    /* Clase para el botón activo */
+    .boton-activo {
+        background-color: rgba(28, 121, 93, 0.336);
+        font-size: 1em;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.315);
+        font-size: 1.1em;
+    }
+
+    .carousel-item img {
+        height: 540px;
+        width: 800px;
+    }
+
+    .carousel-caption h5 {
+        display: none;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+
+    /* flota */
+
+    .titutloFlota {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    .contenedorFlota {
+        background-color: rgba(28, 121, 93, 0.63);
+        color: $color-casi-blanco;
+        width: 70%;
+        height: 600px;
+        margin-left: 15%;
+    }
+    .mediaQuerie {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mediaQuerie div img {
+        margin-top: -20px;
+        width: 380px;
+        height: 220px;
+
+    }
+
+    .mediaQuerie div h4{
+        font-size: 1.6em;
+        padding: 10px;
+    }
+
+    .mediaQuerie div p{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .contenedorMediaQuerieIcono{  
+        display: flex;
+        place-content: center;
+        justify-content: space-evenly;
+        margin: -10px;
+    }
+ 
+    .mediaQuerieIconos {
+        font-size: 0.7em;
+        place-items: center;
+        padding: 0;
+    } 
+
+    .iconoFlota{
+        width: 20px;
+        height: 20px;
+    }
+
+    .botonFlotaReserva {
+        background-color: rgba(0, 0, 0, 0.459);
+        border-color: rgba(0, 0, 0, 0.459);
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    .botonFlotaReserva a {
+        @include anclas;
+        font-size: 1.3em;
+    }
+}
+
+
+/* tablet */
+@media (min-width:769px) and (max-width:992px) {
+
+    /* barra navegacion */
+    header {
+        background-color: $color-negro;
+        margin-bottom: 0px;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+
+    .logoNav {
+        width: 320px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        z-index: 3;
+        background-color: $color-negro;
+        width: 100%;
+    }
+
+    .navbar-nav li {
+        margin-top: -50px;
+    }
+
+    .navbar-toggler {
+        margin-right: 50px;
+    }
+
+    .barraNavegacion {
+        font-size: 0.8em;
+        display: grid;
+        place-content: end;
+        margin-top: -20px;
+        text-align: end;
+    }
+
+    .botonitoReservarIndex a {
+        margin-top: -15px;
+        text-align: center;
+    }
+
+    /* banner 1 */
+
+    .cajaContenedoraBanner {
+        height: 500px;
+        background-size: cover;
+    }
+
+    .cajaImagenBanner {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .imagenBanner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .tituloSubtituloBanner {
+        position: relative;
+        z-index: 2;
+        top: -85%;
+        left: 27%;
+        text-align: center;
+        color: $color-casi-blanco;
+        font-family: 'Gruppo', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .textoBanner h2 {
+        margin-bottom: 80px;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .subtituloBanner {
+        font-size: 1.1em;
+    }
+
+    .bannerEmpresaSection {
+        color: $color-verde;
+        font-family: 'Gruppo', sans-serif;
+        text-align: center;
+        height: 300px;
+        font-weight: bold;
+    }
+
+    .bannerEmpresa h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 4em;
+    }
+
+    .bannerEmpresa p {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+
+
+    .botonitoEmpresaIndex {
+        margin-top: 15px;
+        background-color: $color-verde;
+        border-color: $color-verde;
+        border-radius: 5px;
+        width: 220px;
+        height: 50px;
+    }
+
+    .botonitoEmpresaIndex a {
+        @include anclas;
+        font-family: 'Gruppo', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .divSpanSeccionTres {
+        background-color: $color-verde;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 30px;
+        color: $color-casi-blanco;
+        height: 300px;
+    }
+
+    .spanIndex {
+        padding: 20px;
+        display: inline-block;
+        font-size: 1.6em;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+    .separador {
+        color: rgb(158, 158, 158);
+        font-weight: bold;
+    }
+
+    .spanSeccionTresContenido p {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        font-family: 'Gruppo', sans-serif;
+        font-size: 1.4em;
+    }
+
+    /* grid */
+    .servicioGrid {
+        display: grid;
+        place-content: center;
+    }
+
+    .serviciosMain {
+        text-align: center;
+        height: 1200px;
+        font-family: 'Gruppo', sans-serif;
+        color: $color-casi-blanco;
+    }
+
+    .serviciosMain div h3 {
+        font-size: 2em;
+        color: $color-verde;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .serviciosMainGrid {
+        display: grid;
+        place-items: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'bloqueUno'
+            'bloqueDos';
+    }
+
+    .contenedorServicios {
+        display: grid;
+        place-items: center;
+        height: 300px;
+        width: 100%;
+    }
+
+    .contenedorServicios img {
+        grid-area: "bloqueDos";
+        width: 100%;
+        height: 100%;
+    }
+
+    .contenedorServicios ul {
+        grid-area: "bloqueUno";
+        font-size: 1.2em;
+        height: 300px;
+        list-style-type: lower-roman;
+    }
+
+    .contenedorServicios ul li {
+        background-color: rgba(28, 121, 93, 0.781);
+        width: 340px;
+        height: 200px;
+    }
+
+    .gridMedia{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        'bloqueUnoLi bloqueDosLi';
+    }
+
+    .gridMediaLiUno{
+        grid-area: "bloqueUnoLi";
+    }
+
+    .gridMediaLiDos{
+        grid-area: "bloqueDosLi";
+    }
+
+    .esconder {
+        display: none;
+    }
+
+    /* pie de pagina */
+
+    footer {
+        display: flex;
+        background-color: $color-negro;
+        justify-content: space-between;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+    .footerFlex {
+        display: flex;
+    }
+
+    .footerFlex img {
+        margin-right: 70px;
+    }
+
+    .footerFlex p {
+        color: $color-casi-blanco;
+        margin-left: 70px;
+    }
+
+    /* SERVICIOS */
+
+    .cols {
+        margin-top: 65px;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .col {
+        justify-content: space-evenly;
+        width: 360px;
+        height: 50px;
+        text-align: center;
+        margin: 5px;
+        display: block;
+    }
+
+    .botonServicios {
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-color: $color-verde;
+        background-color: $color-verde;
+        font-weight: bold;
+        font-size: 1em;
+        color: $color-casi-blanco;
+    }
+
+    .mainServicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'bloques'
+            'carrusel';
+        font-family: 'Gruppo', sans-serif;
+        height: 800px;
+    }
+
+    .container {
+        grid-area: "bloques";
+    }
+
+    #carouselExampleIndicators {
+        grid-area: "carrusel";
+        height: 300px;
+        width: 100%;
+        margin-top: -230px;
+    }
+
+    /* Clase para el botón activo */
+    .boton-activo {
+        background-color: rgba(28, 121, 93, 0.336);
+        font-size: 1em;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.315);
+        font-size: 1.1em;
+    }
+
+    .carousel-item img {
+        height: 540px;
+        width: 800px;
+    }
+     /* flota */
+
+     .titutloFlota {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .contenedorFlota {
+        background-color: rgba(28, 121, 93, 0.63);
+        color: $color-casi-blanco;
+        width: 70%;
+        height: 630px;
+        margin-left: 15%;
+    }
+    .mediaQuerie {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .mediaQuerie div img {
+        margin-top: -20px;
+        width: 380px;
+        height: 220px;
+
+    }
+
+    .mediaQuerie div h4{
+        font-size: 1.8em;
+        padding: 10px;
+    }
+
+    .mediaQuerie div p{
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .contenedorMediaQuerieIcono{  
+        display: flex;
+        place-content: center;
+        justify-content: space-evenly;
+        margin: -20px;
+    }
+ 
+    .mediaQuerieIconos {
+        font-size: 0.8em;
+        place-items: center;
+        padding: 0;
+    } 
+
+    .iconoFlota{
+        width: 25px;
+        height: 25px;
+    }
+
+    .botonFlotaReserva {
+        background-color: rgba(0, 0, 0, 0.459);
+        border-color: rgba(0, 0, 0, 0.459);
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    .botonFlotaReserva a {
+        @include anclas;
+        font-size: 1.3em;
+    }
+}

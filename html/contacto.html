@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="COP Tranfers- ¿Tenés alguna duda? No te quedes con ella, consultá sin compromiso.">
+    <title>COP TRANFERS - CONTACTO</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" href="multimedia/logoCortoFlaticon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- NAVBAR BS -->
+        <nav class="navbar navbar-expand-lg fixed">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logoNav" src="../multimedia/logotipo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse barraNavegacion" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nuestraFlota.html">Nuestra Flota</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li>
+                            <div class="cajitaBotonitoReservarIndex">
+                                <button class="botonitoReservarIndex"><a href="reserva.html">Reservar</a></button>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainContacto">
+        <h1 class="tituloContacto">FORMULARIO DE CONTACTO</h1>
+        <form class="formularioContacto" action="">
+            <div class="border-b border-gray-900/10 pb-12">
+                <h3 class="text-base font-semibold leading-7 text-gray-900">Información Personal</h3>
+    
+                <div class="informacion mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                    <div class="sm:col-span-3">
+                        <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Nombre</label>
+                        <div class="mt-2">
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                class="cuadroTexto block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+    
+                    <div class="sm:col-span-3">
+                        <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Apellido</label>
+                        <div class="mt-2">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                class="cuadroTexto block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+    
+                    <div class="sm:col-span-4">
+                        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                        <div class="mt-2">
+                            <input id="email" name="email" type="email" autocomplete="email"
+                                class="cuadroTexto block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+    
+                    <div class="sm:col-span-3">
+                        <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Provincia</label>
+                        <div class="mt-2">
+                            <select id="country" name="country" autocomplete="country-name"
+                                class="cuadroTexto block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                                <option>Buenos Aires</option>
+                                <option>Capital Federal</option>
+                                <option>Buenos Aires Interior</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="col-span-full">
+                        <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Localidad</label>
+                        <div class="mt-2">
+                            <input type="text" name="street-address" id="street-address" autocomplete="street-address"
+                                class="cuadroTexto block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+    
+                    <div class="sm:col-span-2">
+                        <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">Cod. Postal</label>
+                        <div class="mt-2">
+                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                class="cuadroTexto block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="botonContacto">Enviar</button>
+        </form>
+    </main>
+    
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <!-- DIV FLEX -->
+        <div class="footerFlex">
+            <!-- logo -->
+            <div>
+                <img src="../multimedia/logo-corto.png" alt="">
+            </div>
+
+            <div class="footerFlex">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN PAGINA  -->
+    
+    <!-- ------------------------------------------------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

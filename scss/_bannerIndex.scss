@@ -1,0 +1,170 @@
+
+.cajaContenedoraBanner {
+  width: auto;
+  height: 765px;
+  background-size: cover;
+}
+
+.cajaImagenBanner {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.imagenBanner {
+  width: 100%;
+  height: 100%;
+}
+
+.tituloSubtituloBanner {
+  position: absolute;
+  z-index: 2;
+  left: 116vh;
+  top: 300px;
+  text-align: center;
+  color: $color-casi-blanco;
+  font-family: 'Gruppo', sans-serif;
+  text-transform: uppercase;
+}
+
+.textoBanner h2 {
+  margin-bottom: 80px;
+  font-weight: bold;
+  font-size: 4.5vh;
+  padding: 5px;
+}
+
+.subtituloBanner {
+  font-size: 3.3vh;
+}
+
+.bannerEmpresaSection {
+    color: $color-verde;
+    font-family: 'Gruppo', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 385px;
+  }
+  
+  .bannerEmpresa {
+    margin-top: 35px;
+  
+    h2 {
+      font-size: 5em;
+    }
+  
+    p {
+      font-size: 2em;
+    }
+  }
+  
+  .botonitoEmpresaIndex {
+    margin-top: 20px;
+    background-color: $color-verde;
+    border-color: $color-verde;
+    border-radius: 5px;
+    width: 340px;
+    height: 50px;
+    color: $color-casi-blanco;
+  
+    a {
+      text-decoration: none;
+      color: $color-platinum;
+      font-family: 'Gruppo', sans-serif;
+      font-size: 1.5em;
+    }
+  
+    &:hover {
+      border-color: none;
+      border-radius: 12px;
+      height: 55px;
+      width: 345px;
+      font-weight: bold;
+    }
+  }
+  
+  .divSpanSeccionTres {
+    background-color: $color-verde;
+    text-align: center;
+    font-size: 1.25em;
+    color: $color-casi-blanco;
+    font-family: 'Gruppo', sans-serif;
+    width: 100%;
+    height: 250px;
+  }
+  
+  .spanIndex {
+    padding-top: 20px;
+    display: inline-block;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .separador {
+    color: $color-gris-plata;
+    font-weight: bold;
+  }
+  
+  .spanSeccionTresContenido p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .servicioGrid {
+    display: grid;
+    place-content: center;
+  }
+  
+  .serviciosMain {
+    text-align: center;
+    height: 850px;
+    font-family: 'Gruppo', sans-serif;
+    color: $color-casi-blanco;
+  
+    div {
+      padding-top: 30px;
+  
+      h3 {
+        font-size: 2em;
+        color: $color-verde;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .serviciosMainGrid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'bloqueUno bloqueDos';
+    padding: 30px;
+  }
+  
+  .contenedorServicios {
+    padding: 30px;
+    display: grid;
+    place-items: center;
+  
+    img {
+      width: 80%;
+      height: 620px;
+    }
+  
+    ul {
+      font-size: 1.2em;
+      height: 600px;
+      list-style-type: lower-roman;
+  
+      li {
+        background-color: rgba(28, 121, 93, 0.781);
+        width: 386px;
+        height: 200px;
+        margin: 4px;
+      }
+    }
+  }
+  

@@ -1,0 +1,49 @@
+.logoNav {
+    width: 350px;
+    height: auto;
+    padding: 20px 0;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  
+  .barraNavegacion ul li {
+    @include listas;
+    position: relative;
+    padding: 40px;
+    margin-right: 30px;
+  
+    a {
+      @include anclas;
+      text-transform: uppercase;
+      font-size: 1.7em;
+      font-weight: bolder;
+      padding: 20px 4px;
+      display: block;
+  
+      &:hover {
+        color: rgb(28, 121, 93);
+      }
+    }
+  }
+  
+  .botonitoReservarIndex {
+    background-color: $color-verde;
+    border-color: $color-verde;
+    border-radius: 8px;
+    height: 50px;
+    width: 160px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+  
+    a {
+      color: rgb(228, 228, 228);
+      margin-top: -18px;
+      @include anclas;
+    }
+  
+    &:hover {
+      background-color: $color-negro;
+      border-color: $color-verde;
+    }
+  }

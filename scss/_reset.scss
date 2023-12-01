@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    background-color: $color-negro;
+    margin: 0;
+    font-family: 'Gruppo', sans-serif;
+    color: $color-platinum;
+}
