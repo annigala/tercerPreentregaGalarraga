@@ -8,7 +8,7 @@
 body {
   display: flex;
   flex-flow: column;
-  background-color: black;
+  background-color: #FCFCFC;
   margin: 0;
   font-family: "Gruppo", sans-serif;
   color: #dfdfdf;
