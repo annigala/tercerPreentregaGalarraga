@@ -1,3 +1,8 @@
-.body{
-  background-color: $color-casi-blanco;
+body {
+    display: flex;
+    flex-flow: column;
+    background-color: $color-casi-blanco;
+    margin: 0;
+    font-family: 'Gruppo', sans-serif;
+    color: $color-platinum;
 }
